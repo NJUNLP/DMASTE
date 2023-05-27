@@ -2,9 +2,8 @@
 Measuring Your ASTE Models in The Wild: A Diversified Multi-domain Dataset For Aspect Sentiment Triplet Extraction. Ting Xu, Huiyun Yang, Zhen Wu, Jiaze Chen, Fei Zhao, Xinyu Dai. In Findings of ACL, 2023.
 
 ## Data
-The original datasets are released by the paper [1]. [Download](abc)
+The original datasets are released by the paper [1]. [Download](https://github.com/NJUNLP/DMASTE/tree/main/dataset)
 
-Data format descriptions are [here](abc).
 
 ## Usage
 This repository contains the re-implementation of four baseline models for ASTE. The four models included in this implementation are:
@@ -37,38 +36,3 @@ Zhang. In ACL, 2021.
 
 [5] Bidirectional machine reading comprehension
 for aspect sentiment triplet extraction. Shaowei Chen, Yu Wang, Jie Liu, and Yuelin Wang. In AAAI, 2021. 
-
-# 文件说明
-
-## 数据集相关
-* amazon: 来自ASTE-Data-V2: Position-Aware Tagging for Aspect Sentiment Triplet Extraction的数据集和我们数据集的无监督版本
-* dataset: 我们的数据集DMASTE和ASTE-Data-V2，其中 all表示DMASTE中四个源领域数据的总和 
-    * 数据格式： sentence####[(aspect, opinion, sentiment), ....]####category
-    * 读取方式： 
-```
-lines = []
-with open(file_name) as f:
-    lines = f.readlines()
-    lines = [x.split('####') for x in lines]
-for line in lines:
-            sentence, triples = line[:2]
-            triples = eval(triples)
-```
-* eq-dataset: 控制每个领域的训练集大小相同，用于分析迁移性能和领域相似性的关系
-* multi-dataset: 4个源领域数据分别组合，用于multi-source cross-domain的研究 
-
-* ia-dataset: 本文的方法对隐式aspect的处理是在数据层面的，在句子前拼接[ia]表示implicit aspect，并移动标签中aspect,opinion的下标
-* ia-eq-dataset
-* ia-multi-dataset 
-
-## 模型相关
-* analyse: 用于分析数据集和统计实验结果的代码
-* BMARTABSA: A Unified Generative Framework for Aspect-Based Sentiment Analysis 论文的实现
-* BMRC: Bidirectional Machine Reading Comprehension for Aspect Sentiment Triplet Extraction
-    * 包含DANN对抗的实现
-* Generative-ABSA: Towards Generative Aspect-Based Sentiment Analysis
-* GTS: Grid Tagging Scheme for Aspect-oriented Fine-grained Opinion Extraction
-* Span-ASTE: Learning Span-Level Interactions for Aspect Sentiment Triplet Extraction
-* mySpan-ASTE: 我自己对Span-ASTE代码的重构
-    * 包含DANN对抗的实现
-
