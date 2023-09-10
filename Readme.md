@@ -1,6 +1,5 @@
 # DMASTE
-Measuring Your ASTE Models in The Wild: A Diversified Multi-domain Dataset For Aspect Sentiment Triplet Extraction. Ting Xu, Huiyun Yang, Zhen Wu, Jiaze Chen, Fei Zhao, Xinyu Dai. In Findings of ACL, 2023.
-
+[Measuring Your ASTE Models in The Wild: A Diversified Multi-domain Dataset For Aspect Sentiment Triplet Extraction](https://aclanthology.org/2023.findings-acl.178) (Xu et al., Findings 2023)
 ## Data
 The original datasets are released by the paper [1]. [Download](https://github.com/NJUNLP/DMASTE/tree/main/dataset)
 
@@ -22,6 +21,7 @@ Detailed running scripts and instructions for each model can be found in their r
 ## Citation
 If you used the datasets or code, please cite our paper:
 ```
+Ting Xu, Huiyun Yang, Zhen Wu, Jiaze Chen, Fei Zhao, and Xinyu Dai. 2023. Measuring Your ASTE Models in The Wild: A Diversified Multi-domain Dataset For Aspect Sentiment Triplet Extraction. In Findings of the Association for Computational Linguistics: ACL 2023, pages 2837–2853, Toronto, Canada. Association for Computational Linguistics.
 ```
 ## References
 [1] Measuring Your ASTE Models in The Wild: A Diversified Multi-domain Dataset For Aspect Sentiment Triplet Extraction. Ting Xu, Huiyun Yang, Zhen Wu, Jiaze Chen, Fei Zhao, Xinyu Dai. In Findings of ACL, 2023.
